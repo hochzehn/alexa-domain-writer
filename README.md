@@ -1,5 +1,6 @@
 # alexa-domain-writer
 
+    Reads Alexa top domains and writes them to restmq
 
 ## Usage
 

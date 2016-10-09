@@ -8,6 +8,8 @@ else
     number_of_domains=$1
     restmq_url=$2
 
+    jobs=2 #Number of parallel executions
+
     echo "Start parsing first $number_of_domains Domains of Alexa ranking..."
     domains=$(docker run hochzehn/alexa-ranking-parser "$number_of_domains")
     echo "DOMAINS: $domains"
